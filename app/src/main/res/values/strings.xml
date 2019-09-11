@@ -1,0 +1,26 @@
+<resources>
+    <string name="activity_main_title">Gerenciador de vagas</string>
+    <string name="activity_park_new_title">Estacionar novo veículo</string>
+    <string name="activity_parkingmeter_title">Parquímetro</string>
+    <string name="view_main_search_label">Busca por placa de veículo:</string>
+    <string name="view_main_button_park">ESTACIONAR NOVO</string>
+    <string name="view_main_button_details">DETALHES</string>
+    <string name="view_addnew_label_car_plate">Placa do carro:</string>
+    <string name="view_addnew_label_car_type">Tipo de veículo:</string>
+    <string name="view_addnew_button_park">ESTACIONAR</string>
+    <string name="parking_spot_used">Vaga %1$d (Ocupada)</string>
+    <string name="parking_spot_available">Vaga disponível</string>
+    <string name="available_spots_group">Vagas disponíveis:</string>
+    <string name="parking_spot_tostring_available">Vaga %1$d (Disponível)</string>
+    <string name="parking_spot_tostring_used">Vaga %1$d Veículo=%2$s)</string>
+    <string name="used_spots_group">Vagas utilizadas:</string>
+    <string name="vehicle_type_truck">Caminhonete</string>
+    <string name="vehicle_type_car">Carro</string>
+    <string name="vehicle_type_motorcycle">Moto</string>
+    <string name="vehicle_type_other">Outro</string>
+    <string name="error_invalid_plate">Placa inválida</string>
+    <string name="errro_saving_data">Erro ao salvar arquivo</string>
+    <string name="parking_lot_full">Estacionamento lotado</string>
+    <string name="activity_main_message_parked">Veículo estacionado</string>
+    <string name="activity_main_billing_message">Total: $ %1.2f</string>
+</resources>

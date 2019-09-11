@@ -1,0 +1,77 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_outerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Coordinator layout is used because of the snackbar -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:activity=".View.ActivityMain">
+
+        <TextView
+            android:id="@+id/main_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/LabelDescription"
+            android:text="@string/view_main_search_label"
+            />
+
+        <EditText
+            android:id="@+id/main_searchBox"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:background="@color/color_silver"
+            android:inputType="text"
+            android:layout_below="@id/main_textView"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/main_imageView"
+            />
+
+        <ImageView
+            android:id="@+id/main_imageView"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@color/color_silver_dark"
+            android:padding="5dp"
+            android:src="@drawable/license_plate"
+            android:layout_below="@id/main_textView"
+            android:layout_alignParentStart="true"
+            />
+
+        <ListView
+            android:id="@+id/main_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_searchBox"
+            android:layout_alignStart="@+id/main_imageView"
+            android:layout_marginTop="16dp"
+            android:layout_above="@id/bottom_Container"
+            />
+
+        <LinearLayout
+            android:id="@+id/bottom_Container"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"
+            >
+            <Button
+                android:id="@+id/main_button_park"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                style="@style/ButtonGreen"
+                android:text="@string/view_main_button_park"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addnew_label_plate"
+        style="@style/LabelTitle"
+        android:text="@string/view_addnew_label_car_plate"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/addnew_txtbox_plate"
+        android:layout_below="@id/addnew_label_plate"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/LabelTitle"
+        android:text="@string/view_addnew_label_car_type"
+        android:id="@+id/addnew_label_car_type"
+        android:layout_below="@id/addnew_txtbox_plate"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/addnew_label_car_type"
+        android:id="@+id/addnew_spinner_type"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/LabelTitle"
+        android:id="@+id/addnew_label_spot"
+        android:text="Vaga:"
+        android:layout_below="@id/addnew_spinner_type"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/addnew_label_spot"
+        android:id="@+id/addnew_spinner_spot"
+        />
+
+    <Button
+        android:id="@+id/addnew_button_ok"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/addnew_spinner_spot"
+        style="@style/ButtonDefault"
+        android:text="@string/view_addnew_button_park"
+        />
+
+</RelativeLayout>

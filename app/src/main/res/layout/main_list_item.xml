@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <!-- icon -->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/item_iconView"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/license_plate"
+        />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/item_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:typeface="sans"
+        android:layout_toEndOf="@id/item_iconView"
+        android:layout_alignBaseline="@id/item_tagView"
+        android:textSize="18sp"
+        android:text="Item"
+        />
+
+    <!-- tag -->
+    <TextView
+        android:id="@+id/item_tagView"
+        android:layout_width="wrap_content"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/list_item_tag_background"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="ABC-1234"
+        />
+
+
+</RelativeLayout>
