@@ -12,7 +12,7 @@
     <string name="parking_spot_available">Vaga disponível</string>
     <string name="available_spots_group">Vagas disponíveis:</string>
     <string name="parking_spot_tostring_available">Vaga %1$d (Disponível)</string>
-    <string name="parking_spot_tostring_used">Vaga %1$d Veículo=%2$s)</string>
+    <string name="parking_spot_tostring_used">Vaga %1$d Veículo=%2$s</string>
     <string name="used_spots_group">Vagas utilizadas:</string>
     <string name="vehicle_type_truck">Caminhonete</string>
     <string name="vehicle_type_car">Carro</string>
@@ -23,7 +23,7 @@
     <string name="parking_lot_full">Estacionamento lotado</string>
     <string name="activity_main_message_parked">Veículo estacionado</string>
     <string name="activity_main_billing_message">Total: $ %1.2f</string>
-    <string name="parkingmeter_title">Veículo estacionado</string>
+    <string name="parkingmeter_title">Vaga %1$d</string>
     <string name="parkingmeter_park_date">Data de entrada</string>
     <string name="parkingmeter_fee">Tarifa</string>
     <string name="parkingmeter_button_unpark">REMOVER DA VAGA</string>

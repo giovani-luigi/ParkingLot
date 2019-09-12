@@ -16,7 +16,7 @@ public class ActivityParkingMeter extends ControllableActivity {
 
     private int spotId;
     ActivityParkingMeterController controller;
-
+    private TextView txtTitle;
     private TextView txtPlate;
     private TextView txtParkTime;
     private TextView txtFee;
@@ -36,6 +36,7 @@ public class ActivityParkingMeter extends ControllableActivity {
         controller = new ActivityParkingMeterController(this, spotId);
 
         // set local references to components
+        txtTitle = findViewById(R.id.parkingmeter_textview_title);
         txtPlate = findViewById(R.id.parkingmeter_plateno);
         txtParkTime = findViewById(R.id.parkingmeter_text_parktime);
         txtFee = findViewById(R.id.parkingmeter_text_fee);
@@ -54,8 +55,9 @@ public class ActivityParkingMeter extends ControllableActivity {
 
     private void update(){
         // update view components with their latest content
+        txtTitle.setText(App.string(R.string.parkingmeter_title, controller.getParkingSpot().getId()));
         txtPlate.setText(controller.getVehicle().getPlateNo());
-        txtFee.setText(controller.getParkingFee());
+        txtFee.setText(controller.getParkingSpot().getTotalFeeString());
         txtParkTime.setText(controller.getParkingTimeLocal());
         imgVehicle.setImageDrawable(controller.getVehicleDrawable());
     }

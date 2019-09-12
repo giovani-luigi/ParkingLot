@@ -125,7 +125,7 @@ public class ActivityMainController {
                 if (resultCode==Activity.RESULT_OK){
                     // show bill
                     if (data.hasExtra("bill")){
-                        float total = data.getIntExtra("bill", 0);
+                        float total = data.getFloatExtra("bill", 0);
                         showNotification(App.string(R.string.activity_main_billing_message, total));
                     }
                     activity.onControllerUpdateRequest();

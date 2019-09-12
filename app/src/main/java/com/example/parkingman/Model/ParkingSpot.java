@@ -8,19 +8,20 @@ import com.example.parkingman.Controller.TimeProvider;
 import com.example.parkingman.R;
 
 import java.io.Serializable;
+import java.text.NumberFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class ParkingSpot implements Serializable {
 
     private final int id;
-    private final String name;
+    private final String alias;
     private ParkedVehicle parkedVehicle;
     private float hourFee;
 
-    public ParkingSpot(int id, String name, float hourFee){
+    public ParkingSpot(int id, String alias, float hourFee){
         this.id = id;
-        this.name = name;
+        this.alias = alias;
         this.hourFee = hourFee;
     }
 
@@ -67,5 +68,17 @@ public class ParkingSpot implements Serializable {
         Date parkingTime = parkedVehicle.getParkStartTimeUTC();
         long wholeHours = TimeUnit.MILLISECONDS.toHours(TimeProvider.getUniversalTime().getTime() - parkingTime.getTime());
         return hourFee * wholeHours;
+    }
+    /**
+     *
+     * Returns a localized string containing the value of the fee to bill for
+     * the parked vehicle, based in the current moment in time.
+     * */
+    public String getTotalFeeString(){
+        if (!isEmpty()){
+            NumberFormat format = NumberFormat.getCurrencyInstance();
+            return format.format(getTotalFee());
+        }
+        return ""; // default value for unknown situation
     }
 }

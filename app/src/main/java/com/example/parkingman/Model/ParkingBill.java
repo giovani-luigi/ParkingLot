@@ -11,4 +11,5 @@ public class ParkingBill {
     public float getTotalAmount() {
         return totalAmount;
     }
+
 }

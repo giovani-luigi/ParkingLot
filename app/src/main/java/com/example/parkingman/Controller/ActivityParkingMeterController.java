@@ -48,16 +48,8 @@ public class ActivityParkingMeterController {
         return ""; // should never happen
     }
 
-    /**
-     * Returns a localized string containing the value of the fee to bill for
-     * the parked vehicle, based in the current moment in time.
-     * */
-    public String getParkingFee(){
-        if (!spot.isEmpty()){
-            NumberFormat format = NumberFormat.getCurrencyInstance();
-            return format.format(spot.getTotalFee());
-        }
-        return ""; // default value for unknown situation
+    public ParkingSpot getParkingSpot(){
+        return spot;
     }
 
     public ParkedVehicle getVehicle(){
