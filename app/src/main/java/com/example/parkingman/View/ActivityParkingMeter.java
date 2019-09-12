@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.parkingman.App;
 import com.example.parkingman.Controller.ActivityParkingMeterController;
 import com.example.parkingman.Controller.ControllableActivity;
 import com.example.parkingman.R;

@@ -13,10 +13,8 @@ import com.example.parkingman.R;
 
 import java.text.NumberFormat;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 public class ActivityParkingMeterController {
-
 
     private final ControllableActivity activity;
     private final ParkingLot parkingLot;
@@ -28,7 +26,6 @@ public class ActivityParkingMeterController {
         this.spotId = spotId;
         parkingLot = ParkingLot.load(); // retrieve from storage or create new
         this.spot = parkingLot.findSpot(spotId);
-
     }
 
     public void unpark(){
